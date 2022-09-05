@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+{% extends "accounts/base.html" %}
+{% load static %}
+	
+{% block styles %}
+	    <link rel="stylesheet" type="text/css" href="{% static "css/accounts/login.css" %}">
+{% endblock %}
+{% block form-block %}
+
+
+
+
+<div class="container">
+    <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+          <h1>Login</h1>
+            <img src="{% static "images/register2.jpg" %}" alt="" class="img-fluid mb-3 d-none d-md-block">
+            
+            <p class="font-italic text-muted mb-0">Continue on your workout schedule!</p>
+            </p>
+        </div>
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-6  ml-auto align-items-center">
+
+                <div class="row">
+                  <div class="container">
+                   <form enctype="multipart/form-data" method="POST">
+                      {% csrf_token %}
+                     <div class="input-group mb-3">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+              </div>
+              <input type="text" name="username" placeholder="Username..." class="form-control">
+            </div>
+                      <div class="input-group mb-2">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fa fa-key"></i></span>
+              </div>
+                <input type="password" name="password" placeholder="Password..." class="form-control" >
+            </div>
+                      
+                      <div class="form-group col-lg-12">
+                      <input type="submit" name="" value="Login" class="btn btn-primary btn-block btn-submit">
+                    </div>
+
+                   </form>
+
+                    <!-- Submit Button -->
+                    
+
+                    <!-- Already Registered -->
+                    <div class="text-center">
+                        <p class="text-muted font-weight-bold">Not Registered Yet ?<a href="{% url "registration" %}" class="text-primary ml-2">Register</a></p>
+                    </div>
+</div>
+                </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+	{% endblock %}

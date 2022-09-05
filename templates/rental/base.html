@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<title>HeltG</title>
+	<!-- Libraries  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="{% static "css/slick.css" %}"/>
+		<link type="text/css" rel="stylesheet" href="{% static "css/slick-theme.css" %}"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="{% static "css/nouislider.min.css" %}"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}"/>
+		<link type="text/css" rel="stylesheet" href="{% static "css/accounts/base.css" %}"/>
+	<script type="text/javascript">
+		function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+const csrftoken = getCookie('csrftoken');
+	</script>
+	{% block css %}
+	{% endblock %}
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  				<!-- Brand/logo -->
+  		<a class="navbar-brand" href="mainpage.html">
+    		<img src="{% static "images/logo1.png" %}" alt="logo" style="width:40px;">
+  		</a>
+  
+  				<!-- Links -->
+  		<ul class="navbar-nav ml-auto">
+    		<li class="nav-item">
+      			<a class="nav-link" href="{% url 'contactus' %}">About us</a>
+    		</li>
+    		
+   			<li class="nav-item">
+     			<a class="nav-link" href="{% url 'contactus' %}">Contact us</a>
+    		</li>
+  		</ul>
+	</nav>
+
+ 
+
+	{% block body %}
+	{% endblock %}
+	
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Our Main Goal is to help thoes people who want to stay fit and healthy without Help of a professional or going to a dedicated classes. So no more going to thoes busy places, work out peacefully from your home.
+People can also Rent training equipments from other people through our website. No need to buy!</p>
+          </div>
+
+          <div style="padding-left: 250px;"></div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="{% url 'contactus' %}">About Us</a></li>
+              <li><a href="{% url 'contactus' %}">Contact Us</a></li>
+        <!-- <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>-->   
+              <li><a href="{% url 'contactus' %}">Privacy Policy</a></li>
+              <!-- <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by HeltG</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="{% static "js/main/jquery.min.js" %}"></script>
+		<script src="{% static "js/main/bootstrap.min.js" %}"></script>
+		<script src="{% static "js/main/slick.min.js" %}"></script>
+		<script src="{% static "js/main/nouislider.min.js" %}"></script>
+		<script src="{% static "js/main/jquery.zoom.min.js" %}"></script>
+		<script src="{% static "js/main/main.js" %}"></script>
+
+
+
+    <!-- Libraries  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{% static "js/cart.js" %}"></script>
+
+</body>
+</body>
+</html>

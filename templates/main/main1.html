@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+{% extends "accounts/base.html" %}
+{% load static %}
+
+
+
+{% block styles %}
+	    <link rel="stylesheet" type="text/css" href="{% static "css/main/main1.css" %}">
+{% endblock %}
+
+
+
+{% block form-block %}
+<div class="container-fluid bg-dark">
+	<h1 class="text-center text-light  font-weight-bold text-capitalize p-5" >So, What are we gonna do Today?</h1>
+	<hr class="w-50 mx-auto"> 
+</div>
+ <div class="container-fluid  ">
+   
+   <div class="  row  mb-5" style="margin-top:150px">
+      <div class="col-lg-6  container_foto text-center  " style="margin-left:150px">
+         <div class=" text-center">
+            <span  class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+           <a href="{% url 'rentalmain' %}"><h2>Rent Tools</h2></a> 
+            <p>
+         </article>
+         <img src="{% static "images/srental.jpg" %}"  alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right " style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+           <a href="{% url 'main2' %}"> <h2>Perform a  <br>Workout</h2></a>
+
+         </article>
+         <img src="{% static "images/sworkout.jpg" %}" class="text-center" alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right" style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Hire a  <br>Professional</h2>
+            
+         </article>
+         <img src="{% static "images/strainer.jpg" %}"  alt="">
+      </div>
+      
+   </div>
+</div>
+
+
+{% endblock %}

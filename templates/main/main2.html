@@ -1,0 +1,149 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static "css/accounts/base.css" %}">
+   <link rel="stylesheet" type="text/css" href="{% static "css/main/main2.css" %}">
+</head>
+<body>
+
+
+{% load static %}
+
+	    
+
+
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+      <a class="navbar-brand" href="mainpage.html">
+         <img src="{% static "images/logo1.png" %}" alt="logo" style="width:40px;">
+      </a>
+  
+            <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+         <li class="nav-item">
+               <a class="nav-link" href="{% url 'contactus' %}">About us</a>
+         </li>
+         
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'contactus' %}">Contact us</a>
+         </li>
+      </ul>
+   </nav>
+
+
+<div class="container-fluid  bg-dark">
+   <h1 class="text-center text-light p-5 font-weight-bold text-capitalize">choose your workout plan</h1>
+	<hr class="w-50 mx-auto"></div>
+	
+	<div class="container-fluid "> 
+   <div class="  row  mb-5 " style="margin-top:150px">
+      <div class="col-lg-6  container_foto text-center  " style="margin-left:150px">
+         <div class=" text-center">
+            <span  class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <a href="{% url 'pushup' %}"><h2>Upper Body</h2></a>
+            <p>
+         </article>
+         <img src="{% static "images/gupper.jpg" %}"  alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right " style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Back</h2>
+
+         </article>
+         <img src="{% static "images/gback.jpg" %}"  class="text-center" alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right" style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Abdominals</h2>
+            
+         </article>
+         <img src="{% static "images/gabs.jpg" %}"  alt="">
+      </div>
+      <div class="container-fluid  ">
+   
+   <div class="  row  mb-5" style="margin-top:150px">
+      <div class="col-lg-6  container_foto text-center  " style="margin-left:150px">
+         <div class=" text-center">
+            <span  class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Lower Body</h2>
+            <p>
+         </article>
+         <img src="{% static "images/glower.jpg" %}"  alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right " style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>calves</h2>
+
+         </article>
+         <img src="{% static "images/gcalves.jpg" %}"  class="text-center" alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right" style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <a href="{% url 'squat' %}"><h2>Thighs</h2></a>
+            
+         </article>
+         <img src="{% static "images/gthighs.jpg" %}"  alt="">
+      </div>
+      <div class="container-fluid  ">
+   
+   <div class="  row  mb-5" style="margin-top:150px">
+      <div class="col-lg-6  container_foto text-center  " style="margin-left:150px">
+         <div class=" text-center">
+            <span  class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Biceps</h2>
+            <p>
+         </article>
+         <img src="{% static "images/gbiceps.jpg" %}"  alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right " style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Forearms</h2>
+
+         </article>
+         <img src="{% static "images/gforearms.jpg" %}"  class="text-center" alt="">
+      </div>
+      <div class="col-lg-6  container_foto text-right" style="margin-left:80px">
+         <div class="ver_mas text-center">
+            <span id="click" class="lnr lnr-eye"></span>
+         </div>
+         <article class="text-center">
+            <h2>Triceps</h2>
+            
+         </article>
+         <img src="{% static "images/gtriceps.jpg" %}"  alt="">
+      </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
